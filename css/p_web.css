@@ -42,7 +42,7 @@
 
 /*main_section*/
 .main_section {
-  height: 70vh;
+  height: 90vh;
   background-image: url(../images/header_crop.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
@@ -54,6 +54,8 @@
 /*to be changed when resizing viewport*/
 .main_section div {
   /*vh:1% relative to the height of viewport*/
+  position: absolute;
+  margin-top: 10vh;
   height: 70vh;
   text-align: center; }
 
