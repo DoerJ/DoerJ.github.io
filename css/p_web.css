@@ -42,8 +42,8 @@
 
 /*main_section*/
 .main_section {
-  height: 90vh;
-  background-image: url(../images/header_crop.jpg);
+  height: 100vh;
+  background-image: url(../images/me_page.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
   .main_section .col-sm-12 .col-md-7 {
@@ -51,53 +51,45 @@
     right: 0;
     left: 0; }
 
-/*to be changed when resizing viewport*/
-.main_section div {
-  /*vh:1% relative to the height of viewport*/
-  position: absolute;
-  margin-top: 10vh;
-  height: 70vh;
-  text-align: center; }
-
-.main_section h2 {
-  position: absolute;
-  /*center an absolute element*/
-  left: 0;
-  right: 0;
-  padding-top: 18vh;
-  font-size: 38px;
-  color: #ffffff;
-  font-family: "Gill Sans"; }
-
-#opacity_font {
-  margin-left: 20px;
-  opacity: 0.3; }
-
-/*main_section buttons*/
-/*to be adjusted when resizing viewport*/
-.main_section a {
-  z-index: 50;
-  transition: .5s ease;
-  border: 2px solid white;
-  display: inline-block;
-  margin-top: 42vh;
-  height: 40px;
-  width: 120px;
-  font-size: 11px;
-  line-height: 35px;
+.main_section #resume {
   text-decoration: none !important;
-  color: #ffffff; }
-  .main_section a:hover {
-    background-color: #ffffff;
-    color: #000000;
-    word-spacing: 3px; }
-
-/*adjust gap between buttons*/
-#resume {
-  margin-right: 5px; }
-
-#contact {
-  margin-left: 5px; }
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 11px;
+  color: white;
+  background-color: black;
+  font-family: "Gill Sans";
+  margin-left: 48vw;
+  margin-top: 50vh;
+  transition: .5s ease;
+  margin-left: 24.5vw;
+  margin-top: 63vh;
+  background-color: #0c1f67; }
+  .main_section #resume:hover {
+    word-spacing: 3px;
+    color: #000000 !important;
+    background-color: transparent; }
+  .main_section #resume:before {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease; }
+  .main_section #resume:before {
+    left: 0;
+    width: 100%;
+    top: 28px;
+    bottom: 0;
+    background: #000000;
+    height: 2px;
+    transform: scaleX(0); }
+  .main_section #resume:hover:before {
+    transform: scaleX(1); }
+  .main_section #resume:hover {
+    color: #0c1f67 !important; }
+  .main_section #resume:before {
+    background: #0c1f67; }
 
 /*portfolio*/
 .portfolio {
@@ -127,7 +119,7 @@
   opacity: 0.8; }
 
 #opacity_font_portfolio {
-  padding-left: 22px;
+  padding-left: 17px;
   color: #fcfff5; }
 
 /*android*/
@@ -146,7 +138,8 @@
 .android h1 {
   padding-top: 1vh;
   padding-left: 15vw;
-  font-size: 80px; }
+  font-size: 80px;
+  color: #0c1f67; }
 
 .android h1:not(#opacity_font_android) {
   opacity: 0.3;
@@ -160,7 +153,8 @@
 #opacity_font_android {
   transition: .5s ease;
   padding-left: 16.7vw;
-  opacity: 0.1; }
+  opacity: 0.1;
+  color: #fb3c33; }
 
 /*ui_design*/
 .ui_design h5, .ui_design h1 {
@@ -179,7 +173,8 @@
   padding-top: 1vh;
   /*padding-left: 40vw;*/
   right: 15vw;
-  font-size: 80px; }
+  font-size: 80px;
+  color: #0c1f67; }
 
 .ui_design h1:not(#opacity_font_ui) {
   z-index: 20;
@@ -194,7 +189,8 @@
   /*padding-left: 41.7vw;*/
   right: 16.7vw;
   opacity: 0.1;
-  transition: .5s ease; }
+  transition: .5s ease;
+  color: #fb3c33; }
 
 /*web*/
 .web h5, .web h1 {
@@ -212,7 +208,8 @@
 .web h1 {
   padding-top: 1vh;
   font-size: 80px;
-  padding-left: 25vw; }
+  padding-left: 25vw;
+  color: #0c1f67; }
 
 .web h1:not(#opacity_font_web) {
   opacity: 0.3;
@@ -226,7 +223,8 @@
 #opacity_font_web {
   padding-left: 26.5vw;
   opacity: 0.1;
-  transition: .5s ease; }
+  transition: .5s ease;
+  color: #fb3c33; }
 
 /*about*/
 .about {
@@ -272,10 +270,6 @@
   font-family: "Gill Sans";
   font-size: 16px;
   opacity: 0.8; }
-
-#opacity_font_easy {
-  padding-left: 10px;
-  opacity: 0.2; }
 
 /*buttons*/
 .easy_due a {
@@ -341,14 +335,10 @@
   font-size: 16px;
   opacity: 0.8; }
 
-#opacity_font_manager {
-  padding-left: 10px;
-  opacity: 0.2; }
-
 /*button*/
 .health_manager a {
-  position: absolute;
   text-decoration: none !important;
+  position: absolute;
   width: 120px;
   height: 30px;
   text-align: center;
@@ -357,24 +347,27 @@
   color: white;
   background-color: black;
   font-family: "Gill Sans";
+  margin-left: 48vw;
+  margin-top: 50vh;
+  transition: .5s ease;
   margin-left: 24vw;
-  margin-top: 43vh;
-  transition: .5s ease; }
+  margin-top: 43vh; }
   .health_manager a:hover {
+    word-spacing: 3px;
     color: #000000 !important;
-    background-color: transparent;
-    word-spacing: 3px; }
+    background-color: transparent; }
   .health_manager a:before {
     content: '';
     position: absolute;
-    transition: transform .5s ease;
+    transition: transform .5s ease; }
+  .health_manager a:before {
     left: 0;
-    bottom: 0;
+    width: 100%;
     top: 28px;
+    bottom: 0;
+    background: #000000;
     height: 2px;
-    background-color: #000000;
-    transform: scaleX(0);
-    width: 100%; }
+    transform: scaleX(0); }
   .health_manager a:hover:before {
     transform: scaleX(1); }
 
@@ -501,8 +494,8 @@
 
 /*ui_design button*/
 .designs a {
-  position: absolute;
   text-decoration: none !important;
+  position: absolute;
   width: 120px;
   height: 30px;
   text-align: center;
@@ -511,22 +504,25 @@
   color: white;
   background-color: black;
   font-family: "Gill Sans";
+  margin-left: 48vw;
+  margin-top: 50vh;
+  transition: .5s ease;
   margin-top: 170vh;
-  margin-left: 8vw;
-  transition: .5s ease; }
+  margin-left: 8vw; }
   .designs a:hover {
     word-spacing: 3px;
-    background-color: transparent;
-    color: #000000 !important; }
+    color: #000000 !important;
+    background-color: transparent; }
   .designs a:before {
     content: '';
     position: absolute;
-    transition: transform .5s ease;
+    transition: transform .5s ease; }
+  .designs a:before {
     left: 0;
-    bottom: 0;
-    top: 28px;
-    background: #000000;
     width: 100%;
+    top: 28px;
+    bottom: 0;
+    background: #000000;
     height: 2px;
     transform: scaleX(0); }
   .designs a:hover:before {
@@ -559,8 +555,8 @@
   padding-top: 47vh; }
 
 .sch_prj a {
-  position: absolute;
   text-decoration: none !important;
+  position: absolute;
   width: 120px;
   height: 30px;
   text-align: center;
@@ -569,23 +565,26 @@
   color: white;
   background-color: black;
   font-family: "Gill Sans";
+  margin-left: 48vw;
+  margin-top: 50vh;
+  transition: .5s ease;
   margin-top: 67vh;
-  margin-left: 8vw;
-  transition: .5s ease; }
+  margin-left: 8vw; }
   .sch_prj a:hover {
     word-spacing: 3px;
-    background-color: transparent;
-    color: #000000 !important; }
+    color: #000000 !important;
+    background-color: transparent; }
   .sch_prj a:before {
     content: '';
     position: absolute;
-    transition: transform .5s ease;
+    transition: transform .5s ease; }
+  .sch_prj a:before {
     left: 0;
-    bottom: 0;
-    top: 28px;
     width: 100%;
-    height: 2px;
+    top: 28px;
+    bottom: 0;
     background: #000000;
+    height: 2px;
     transform: scaleX(0); }
   .sch_prj a:hover:before {
     transform: scaleX(1); }
