@@ -1,23 +1,12 @@
-# DoerJ's Personal Webpage
--A web page contains the contents of DoerJ nature.
+# My Personal Website
 
-# Built With
--Javascript: Requests the HTML page
- 
--CSS: Describes the style of HTML documents
- 
--HTML: The web framework used
-  
-# Platform
--Windows
- 
--Linux
- 
-# License
--This project is licensed under the HTML License
- 
-# Authors
--DoerJ
+## Authors
+- James(Yuhao) He
 
-# Notice
--sub-pages and more dynamic elements will be added soon
+## Built With
+- HTML5
+- SCSS/CSS
+- Bootstrap (Grid System) 
+
+## Updates
+- More documentations and sub-pages will be added soon
