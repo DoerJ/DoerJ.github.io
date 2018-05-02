@@ -7,7 +7,7 @@
 ## Built With
 - HTML5
 - SCSS/CSS
-- Bootstrap framework(Grid System) 
+- Bootstrap framework(grid system) 
 
 ## Coming soon
 - More documentations and sub-pages will be added soon
