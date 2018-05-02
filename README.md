@@ -9,5 +9,5 @@
 - SCSS/CSS
 - Bootstrap framework(Grid System) 
 
-## Updates
+## Coming soon
 - More documentations and sub-pages will be added soon
