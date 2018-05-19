@@ -489,10 +489,10 @@
   opacity: 0.8;
   padding-left: 8vw; }
 
-#first_part {
+.designs > #first_part {
   padding-top: 145vh; }
 
-#second_part {
+.designs > #second_part {
   padding-top: 155vh; }
 
 /*ui_design button*/
@@ -554,8 +554,13 @@
   font-size: 16px;
   font-family: "Gill Sans";
   line-height: 18px;
-  padding-left: 8vw;
+  padding-left: 8vw; }
+
+.sch_prj > #first_part {
   padding-top: 47vh; }
+
+.sch_prj > #second_part {
+  padding-top: 54.5vh; }
 
 .sch_prj a {
   text-decoration: none !important;
@@ -571,7 +576,7 @@
   margin-left: 48vw;
   margin-top: 50vh;
   transition: .5s ease;
-  margin-top: 67vh;
+  margin-top: 69vh;
   margin-left: 8vw; }
   .sch_prj a:hover {
     word-spacing: 3px;
