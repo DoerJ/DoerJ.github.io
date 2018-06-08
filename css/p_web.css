@@ -289,7 +289,8 @@
   font-family: "Gill Sans";
   margin-left: 48vw;
   margin-top: 50vh;
-  transition: .5s ease; }
+  transition: .5s ease;
+  margin-top: 52vh; }
   .easy_due a:hover {
     word-spacing: 3px;
     color: #000000 !important;
