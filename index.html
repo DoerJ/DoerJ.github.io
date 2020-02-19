@@ -1,154 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> James's Personal Website </title>
-	<link rel="stylesheet" href="css/p_web.css">
-	<!-- bootstrap.js-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<!-- wrapping the whole content of web-->
-<!-- div is a block element while span is an inline element-->
-	<header role="header">
-		<nav class="icon_bar" role="navigation">
-			<div id="name_icon"></div>
-			<a href="#home">H O M E</a>
-			<a href="#portfolio">P O R T F O L I O</a>
-			<a href="#about">A B O U T</a>
-			<a href="#blog">B L O G</a>
-		</nav>
-	</header>
-	<div class="wrapper">
-		<div class="main_section">
-			<div class="col-sm-12 col-md-7">
-				<a href="documents/Resume.pdf" id="resume">R e s u m e</a>
-			</div>
-		</div>
-		<!--portfolio section-->
-		<div class="portfolio">
-			<div class="focus">
-			<!--insert extra space between text-->
-				<h2>M Y &nbsp; F O C U S</h2>
-				<h2 id="opacity_font_portfolio">M Y  &nbsp; F O C U S</h2>
-			</div>
-			<div class="android">
-				<h5>Java, xml, Git<br>
-				SQLite, APIs, Material Designs<br>
-				<h1>A n d r o i d</h1>
-				<h1 id="opacity_font_android">A n d r o i d</h1>
-			</div>
-			<div class="ui_design">
-				<h5>Adobe Photoshop, Adobe Illustrator<br>
-				Paper Prototype Techniques<br>
-				Axure</h5>
-				<h1>U I &nbsp; D e s i g n</h1>
-				<h1 id="opacity_font_ui">U I &nbsp; D e s i g n</h1>
-			</div>
-			<div class="web">
-				<h5>Web Design, HTML5, CSS3, SCSS<br>
-				JavaScript, jQuery, Vue.js<br>
-				Bootstrap, Cross-Browser Compatibility, Responsive Design</h5>
-				<h1>W e b</h1>
-				<h1 id="opacity_font_web">W e b</h1>
-			</div>
-		</div>
-		<!--about-->
-		<div class="about">
-			<div class="easy_due">
-				<div>
-					<img src="images/easydue_icon.jpg">
-				</div>
-				<h2>E a s y &nbsp; D u e</h2>
-				<h2 id="opacity_font_easy">E a s y &nbsp; D u e</h2>
-				<h5>An app that provides a real-time timer<br>
-				to count down the task, <br>
-				maximumlly ease your time management.</h5>
-				<!--buttons-->
-				<a href="#more_easy_due" id="more">M o r e</a>
-			</div>
-			<div class="health_manager">
-				<div>
-					<img src="images/app-icon.jpg">
-				</div>
-				<h2>H e a l t h &nbsp; M a n a g e r</h2>
-				<h2 id="opacity_font_manager">H e a l t h &nbsp; M a n a g e r</h2>
-				<h5>A self-serving health-care app<br>
-				designed for small and medium-scale clinics.<br>
-				Supports patients, doctors, and stakeholders on <br>
-				various kinds of clinic activities.</h5>
-				<a href="#more_health_manager" id="more">M o r e</a>
-			</div>
-		</div>
-		<div class="designs">
-			<div class="comet">
-			
-			</div>
-			<div id="comet_shadow">
-				
-			</div>
-			<div class="welcome_page">
-				
-			</div>
-			<div id="welcome_shadow">
-				
-			</div>
-			<div class="task">
-				
-			</div>
-			<div id="task_shadow">
-				
-			</div>
-			<!--text-->
-			<h1>M y &nbsp; U I &nbsp; D e s i g n s</h1>
-			<h1 id="opacity_font_designs">M y &nbsp; U I &nbsp; D e s i g n s</h1>
-			<h5 id="first_part">Everything is made from scratch.<br>
-			I love reaching out to the interface elements that are visually appealing,<br>
-			and I enjoy using tools such as Adobe Photoshop and Illustrator to achieve them on the screens.</h5>
-			<h5 id="second_part">A welcome software application is composed of efficient, meaningful, and<br>
-			attractive user interface elements.<br>
-			I believe in this principle, and I aim to design the user interfaces that follow it.</h5>
-			<a href="#more_designs">M o r e</a>
-		</div>
-		<div class="sch_prj">
-			<h1>M y &nbsp; S c h o o l<br>
-			P r o j e c t s</h1>
-			<h1 id="opacity_font_prj">M y &nbsp; S c h o o l<br>
-			P r o j e c t s</h1>
-			<h5 id="first_part">I have taken courses that offer fair amount of opportunities to play along with<br>
-			comprehensive, powerful, and interesting coding projects.</h5>
-			<h5 id="second_part">These projects not only give me overviews on various important fields of computer science subject<br>
-			but also strengthen my understandings to the fundamental theories, coding skills,<br>
-			and the ability of solving practical problems.</h5>
-			<a href="#more_prj" id="more">M o r e</a>
-			<div id="modeling">
-				
-			</div>
-			<div id="shade_modeling">
-				
-			</div>
-			<div id="sql">
-				
-			</div>
-			<div id="shade_sql">
-				
-			</div>
-			<div id="server">
-				
-			</div>
-			<div id="shade_server">
-				
-			</div>
-		</div>
-		<div class="footer">
-			<h1>E X P L O R E &nbsp; / &nbsp; C R E A T I V I T Y &nbsp; / &nbsp; F O C U S</h1>
-			<div class="icon_bar_footer">
-				<a href="#home">H O M E</a>
-				<a href="#portfolio">P O R T F O L I O</a>
-				<a href="#about">A B O U T</a>
-				<a href="#blog">B L O G</a>
-			</div>
-		</div>
-	</div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Doer J's personal webpage</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <div id="header-wrapper">
+            <div id="logo">YUHAO HE</div>
+            <img src="./res/landing.png" class="landing-pic fadein-on-load"></img>
+            <div class="header-bio slidein-on-load">I'm a software enginner focusing on</br>web development, living in BC, Canada</div>
+        </div>
+    </header>
+    <body>
+        <div id="body-wrapper">
+            <div id="body-dict"></div>
+            <div class="contact slidein-on-scroll">
+                <div id="contact-info">
+                    <div id="contact-title">Contact</div>
+                    <ul id="contact-details">Contact details</ul>
+                    <ul id="contact-socials">Contact socials
+                        <div id="contact-socials-container"></div>
+                    </ul>
+                </div>
+                <div id="contact-pic-background">
+                    <img src="./res/hello.png" id="contact-pic"></img>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div id="footer-wrapper">
+            <div id="footer-trademark">© 2020 YUHAO HE</div>
+            <div id="footer-logo">YUHAO HE</div>
+        </div>
+    </footer>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./modules/text-src.js"></script>
+    <script type="module" src="./modules/img-src.js"></script>
+    <script type="module" src="./modules/link-src.js"></script>
+    <script type="module" src="./modules/scroller.js"></script>
+    <script type="module" src="./modules/loader.js"></script>
 </html>
