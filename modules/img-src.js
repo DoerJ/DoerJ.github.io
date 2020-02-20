@@ -5,5 +5,6 @@ export const imageSources = {
     githubIcon: 'github.svg',
     linkedinIcon: 'linkedin.svg',
     behanceIcon: 'behance.svg',
-    zhihuIcon: 'zhihu.svg'
+    zhihuIcon: 'zhihu.svg',
+    arrowIcon: 'arrow.png'
 }

@@ -9,7 +9,6 @@ import { linkSources } from './modules/link-src.js';
         let bodyDictNode = createNodeFromDescriptionItem(descriptionText[key]);
         bodyDict.appendChild(bodyDictNode);
     }
-
     var contactDetailsList = document.getElementById('contact-details');
     var contactSocialsList = document.getElementById('contact-socials-container');
     createContactLists(contactDetailsList, contactSocialsList);
@@ -21,16 +20,13 @@ function createNodeFromDescriptionItem(descriptionItem) {
     var orientation = descriptionItem.orientation;
     var pictureId = descriptionItem.picId;
     var link = descriptionItem.link;
+    var icon = descriptionItem.icon;
 
     var bodyDictNode = document.createElement('div');
     bodyDictNode.className = `dict-${orientation} slidein-on-scroll`;
 
     // dict-content
-    var bodyDictArrow = document.createElement('a');
-    bodyDictArrow.className = 'arrow';
-    bodyDictArrow.href = linkSources[link];
-    var arrowIcon = '<img src="./res/arrow.png"></img>';
-    bodyDictArrow.innerHTML = arrowIcon;
+    var bodyDictArrow = createIconLink('arrow', linkSources[link], `./res/${imageSources[icon]}`);
     var bodyDictDescription = `<p class="dict-title">${title}</p>`+`<p class="dict-content">${content}</p>`;
     var bodyDictDescriptionItems = document.createElement('div');
     bodyDictDescriptionItems.className = `dict-content-${orientation}`;
@@ -56,6 +52,15 @@ function createNodeFromDescriptionItem(descriptionItem) {
     return bodyDictNode;
 }
 
+function createIconLink(name, link, icon) {
+    var container = document.createElement('a');
+    container.className = name;
+    container.href = link;
+    var icon = `<img src=${icon}></img>`;
+    container.innerHTML = icon;
+    return container;
+}
+
 function createContactLists(contactDetailsList, contactSocialsList) {
     var contactDetails = contactText.details;
     var contactSocials = contactText.socials;
@@ -66,15 +71,10 @@ function createContactLists(contactDetailsList, contactSocialsList) {
     }
     var pos = 0;
     for(let key in contactSocials) {
-        let contactSocialItem = document.createElement('a');
-        if(pos++ !== 0) contactSocialItem.className = 'socials-items';
+        let name = (pos++ !== 0) ? 'socials-items' : 'first-socials-item';
         let link = contactSocials[key]['link'];
-        contactSocialItem.href = linkSources[link];
-
         let icon = contactSocials[key]['icon'];
-        let iconPath = `./res/${imageSources[icon]}`;
-        let contactSocialIcon = `<img src=${iconPath}></img>`
-        contactSocialItem.innerHTML = contactSocialIcon;
+        let contactSocialItem = createIconLink(name, linkSources[link], `./res/${imageSources[icon]}`);
         contactSocialsList.appendChild(contactSocialItem);
     }
 }

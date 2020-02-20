@@ -7,7 +7,8 @@ const descriptionText = {
             'methodologies during my works and learnings.</br>',
         orientation: 'left',
         picId: 'technicalBlog',
-        link: 'dummyLink'
+        link: 'dummyLink',
+        icon: 'arrowIcon'
     },
     technicalProjectText: {
         title: 'Technical Projects',
@@ -15,7 +16,8 @@ const descriptionText = {
             'projects. Check out my lastest works at Github repo.</br>',
         orientation: 'right',
         picId: 'technicalProject',
-        link: 'githubLink'
+        link: 'githubLink',
+        icon: 'arrowIcon'
     },
     uiDesignsText: {
         title: 'UI Designs',
@@ -24,7 +26,8 @@ const descriptionText = {
             'my works with other design lovers.',
         orientation: 'left',
         picId: 'uiDesigns',
-        link: 'behanceLink'
+        link: 'behanceLink',
+        icon: 'arrowIcon'
     }
 }
 
