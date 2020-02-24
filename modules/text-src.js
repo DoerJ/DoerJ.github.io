@@ -7,7 +7,7 @@ const descriptionText = {
             'methodologies during my works and learnings.</br>',
         orientation: 'left',
         picId: 'technicalBlog',
-        link: 'dummyLink',
+        link: 'hexoLink',
         icon: 'arrowIcon'
     },
     technicalProjectText: {
