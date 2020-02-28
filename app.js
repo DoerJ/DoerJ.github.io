@@ -1,6 +1,6 @@
-import { descriptionText, contactText } from './modules/text-src.js';
-import { imageSources } from './modules/img-src.js';
-import { linkSources } from './modules/link-src.js';
+import { descriptionText, contactText } from './components/text-src.js';
+import { imageSources } from './components/img-src.js';
+import { linkSources } from './components/link-src.js';
 
 // initialize blog text
 (function initializeTextNodes() {
@@ -26,7 +26,7 @@ function createNodeFromDescriptionItem(descriptionItem) {
     bodyDictNode.className = `dict-${orientation} slidein-on-scroll`;
 
     // dict-content
-    var bodyDictArrow = createIconLink('arrow', linkSources[link], `./res/${imageSources[icon]}`);
+    var bodyDictArrow = createIconLink('arrow', linkSources[link], `./assets/images/${imageSources[icon]}`);
     var bodyDictDescription = `<p class="dict-title">${title}</p>`+`<p class="dict-content">${content}</p>`;
     var bodyDictDescriptionItems = document.createElement('div');
     bodyDictDescriptionItems.className = `dict-content-${orientation}`;
@@ -36,7 +36,7 @@ function createNodeFromDescriptionItem(descriptionItem) {
     // dict-pic
     var bodyDictPicture = document.createElement('img');
     bodyDictPicture.className = `dict-pic-${orientation} thumbnail-img`;
-    bodyDictPicture.src = `./res/${imageSources[pictureId]}`;
+    bodyDictPicture.src = `./assets/images/${imageSources[pictureId]}`;
 
     switch(orientation) {
         case 'left':
@@ -74,7 +74,7 @@ function createContactLists(contactDetailsList, contactSocialsList) {
         let name = (pos++ !== 0) ? 'socials-items' : 'first-socials-item';
         let link = contactSocials[key]['link'];
         let icon = contactSocials[key]['icon'];
-        let contactSocialItem = createIconLink(name, linkSources[link], `./res/${imageSources[icon]}`);
+        let contactSocialItem = createIconLink(name, linkSources[link], `./assets/images/${imageSources[icon]}`);
         contactSocialsList.appendChild(contactSocialItem);
     }
 }
