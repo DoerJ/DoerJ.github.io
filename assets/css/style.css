@@ -14,9 +14,18 @@ ul > :first-child {
 }
 li {
     line-height: 2.2vw;
-    font-size: 1.2vw;
+    font-size: 15px;
     font-weight: normal;
     color: #000000;
+}
+div#body-dict {
+    margin-top: 160px;
+}
+div#body-dict > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
 }
 /* header */
 #header-wrapper {
@@ -27,8 +36,8 @@ li {
     justify-content: center;
     align-items: center;
     width: 20vw;
-    height: 10vh;
-    font-size: 1.7vw;
+    height: 103px;
+    font-size: 20px;
     font-weight: bold;
 }
 .landing-pic {
@@ -37,10 +46,10 @@ li {
     width: auto;
 }
 .header-bio {
-    height: 20vh;
+    height: 180px;
     padding-left: 22vw;
     padding-top: 5vw;
-    font-size: 1.4vw;
+    font-size: 19px;
     font-weight: normal;
 }
 /* body */
@@ -51,22 +60,19 @@ li {
     display: flex;
     align-items: center;
 }
-.dict-left, .dict-right {
-    margin-top: 20vw;
-    margin-left: 15vw;
-}
 .dict-left > div, .dict-right > div {
     display: inline-block;
+    text-align: left;
 }
 .dict-content-right {
     margin-left: 15vw;
 }
 .dict-title {
-    font-size: 1.7vw;
+    font-size: 19px;
     font-weight: bold;
 }
 .dict-content {
-    font-size: 1.2vw;
+    font-size: 15px;
     line-height: 2.2vw;
     margin-top: 4vw;
 }
@@ -94,16 +100,16 @@ li {
     border: none;
 }
 .dict-pic-left {
-    margin-left: 10vw;
+    margin-left: 150px;
 }
 .contact {
     position: relative;
-    height: 60vh;
-    margin-top: 25vw;
-    margin-left: 15vw;
+    height: 370px;
+    margin-top: 290px;
+    margin-left: 169px;
 }
 #contact-details, #contact-socials {
-    font-size: 1.3vw;
+    font-size: 17px;
     font-weight: bold;
     color: #354088;
 }
@@ -132,7 +138,7 @@ li {
     display: inline;
 }
 #contact-title {
-    font-size: 2.2vw;
+    font-size: 19px;
     font-weight: bold;
 }
 #contact-info {
@@ -159,17 +165,16 @@ li {
 /* footer */
 #footer-wrapper {
     height: 100%;
+    margin-top: 270px;
 }
 #footer-trademark {
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #footer-logo {
-    height: 8vh;
-    width: 20vw;
     float: right;
+    margin-top: 50px;
 }
 /* animation on load and scroll */
 .fadein-on-load {

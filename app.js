@@ -1,12 +1,12 @@
-import { descriptionText, contactText } from './components/text-src.js';
-import { imageSources } from './components/img-src.js';
-import { linkSources } from './components/link-src.js';
+import { descriptionText, contactText } from './src/profiles.js';
+import { imageSources } from './src/images.js';
+import { linkSources } from './src/links.js';
 
 // initialize blog text
-(function initializeTextNodes() {
+(function init() {
     var bodyDict = document.getElementById('body-dict');
     for(let key in descriptionText) {
-        let bodyDictNode = createNodeFromDescriptionItem(descriptionText[key]);
+        let bodyDictNode = createNodeFromprofile(descriptionText[key]);
         bodyDict.appendChild(bodyDictNode);
     }
     var contactDetailsList = document.getElementById('contact-details');
@@ -14,38 +14,33 @@ import { linkSources } from './components/link-src.js';
     createContactLists(contactDetailsList, contactSocialsList);
 })();
 
-function createNodeFromDescriptionItem(descriptionItem) {
-    var title = descriptionItem.title;
-    var content = descriptionItem.text;
-    var orientation = descriptionItem.orientation;
-    var pictureId = descriptionItem.picId;
-    var link = descriptionItem.link;
-    var icon = descriptionItem.icon;
+function createNodeFromprofile(profile) {
+    var orientation = profile.orientation;
 
     var bodyDictNode = document.createElement('div');
     bodyDictNode.className = `dict-${orientation} slidein-on-scroll`;
 
     // dict-content
-    var bodyDictArrow = createIconLink('arrow', linkSources[link], `./assets/images/${imageSources[icon]}`);
-    var bodyDictDescription = `<p class="dict-title">${title}</p>`+`<p class="dict-content">${content}</p>`;
-    var bodyDictDescriptionItems = document.createElement('div');
-    bodyDictDescriptionItems.className = `dict-content-${orientation}`;
-    bodyDictDescriptionItems.innerHTML = bodyDictDescription;
-    bodyDictDescriptionItems.appendChild(bodyDictArrow);
+    var bodyDictArrow = createIconLink('arrow', linkSources[profile.link], `./assets/images/${imageSources[profile.icon]}`);
+    var bodyDictDescription = `<p class="dict-title">${profile.title}</p>`+`<p class="dict-content">${profile.text}</p>`;
+    var bodyDictprofiles = document.createElement('div');
+    bodyDictprofiles.className = `dict-content-${orientation}`;
+    bodyDictprofiles.innerHTML = bodyDictDescription;
+    bodyDictprofiles.appendChild(bodyDictArrow);
 
     // dict-pic
     var bodyDictPicture = document.createElement('img');
     bodyDictPicture.className = `dict-pic-${orientation} thumbnail-img`;
-    bodyDictPicture.src = `./assets/images/${imageSources[pictureId]}`;
+    bodyDictPicture.src = `./assets/images/${imageSources[profile.picId]}`;
 
     switch(orientation) {
         case 'left':
-            bodyDictNode.appendChild(bodyDictDescriptionItems);
+            bodyDictNode.appendChild(bodyDictprofiles);
             bodyDictNode.appendChild(bodyDictPicture);
             break;
         case 'right':
             bodyDictNode.appendChild(bodyDictPicture);
-            bodyDictNode.appendChild(bodyDictDescriptionItems);
+            bodyDictNode.appendChild(bodyDictprofiles);
             break;
     }
 

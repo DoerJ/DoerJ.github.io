@@ -1,10 +1,11 @@
 const descriptionText = {
     technicalBlogText: {
         title: 'Technical Blog',
-        text: 'As a web developer, I love reaching out to the new</br>'+
-            'web technologies, and expanding my skill set. Here are</br>'+
-            'some of my thoughts on different web tools and</br>'+
-            'methodologies during my works and learnings.</br>',
+        text: 'As a web developer, I love reaching out</br>'+
+            'to the new web technologies, and expanding</br>'+
+            'my skill set. Here are some of my thoughts on</br>'+
+            'different web tools and methodologies</br>' + 
+            'during my works and learnings.',
         orientation: 'left',
         picId: 'technicalBlog',
         link: 'hexoLink',
@@ -12,8 +13,9 @@ const descriptionText = {
     },
     technicalProjectText: {
         title: 'Technical Projects',
-        text: 'I like backing myself up with technical personal</br>'+
-            'projects. Check out my lastest works at Github repo.</br>',
+        text: 'I like backing myself up  technical</br>'+
+            'personal projects. Check out my lastest</br>' + 
+            'works at Github repo.',
         orientation: 'right',
         picId: 'technicalProject',
         link: 'githubLink',
@@ -21,9 +23,10 @@ const descriptionText = {
     },
     uiDesignsText: {
         title: 'UI Designs',
-        text: 'Besides coding, I also love UI designs. My</br>'+
-            'footprints can be found at Behance where I share</br>'+
-            'my works with other design lovers.',
+        text: 'Besides coding, I also love UI designs.</br>'+
+            'My footprints can be found at Behance</br>'+
+            'where I share my works with other</br>' + 
+            'design lovers.',
         orientation: 'left',
         picId: 'uiDesigns',
         link: 'behanceLink',
