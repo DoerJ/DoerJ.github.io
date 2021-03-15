@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Doer J's personal webpage</title>
-        <link rel="icon" href="./assets/images/favicon.png">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap">
-    </head>
-    <header>
-        <div id="header-wrapper">
-            <div id="logo">YUHAO HE</div>
-            <img src="./assets/images/landing.png" class="landing-pic fadein-on-load"></img>
-            <div class="header-bio slidein-on-load">I'm a software engineer focusing on</br>web development, living in BC, Canada</div>
+  <head>
+    <meta charset="utf-8" />
+    <title>Doer J's personal website</title>
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap">
+  </head>
+
+  <!-- header section -->
+  <header>
+    <div id="header-wrapper">
+      <div id="logo">YUHAO HE</div>
+        <img src="./assets/images/landing.png" class="landing-background fadein-on-load"></img>
+          <div class="header-bio slidein-on-load">I'm a software engineer focusing on</br>web development, living in BC, Canada</div>
+      </div>
+  </header>
+
+  <!-- body content -->
+  <body>
+    <div id="body-wrapper">
+      <div id="bio-content"></div>
+      <div id="personal-contact">
+
+        <!-- personal contact info -->
+        <div class="slidein-on-scroll" id="personal-contact-content">
+          <h2 id="personal-contact-title">Personal Contact</h2>
+          <ul id="personal-contact-info">
+            <span>Contact info</span>
+          </ul>
+          <ul id="personal-contact-socials">
+            <span>Social medias</span>
+            <div id="personal-social-medias-wrapper"></div>
+          </ul>
         </div>
-    </header>
-    <body>
-        <div id="body-wrapper">
-            <div id="body-dict"></div>
-            <div class="contact slidein-on-scroll">
-                <div id="contact-info">
-                    <div id="contact-title">Contact</div>
-                    <ul id="contact-details">Contact details</ul>
-                    <ul id="contact-socials">Contact socials
-                        <div id="contact-socials-container"></div>
-                    </ul>
-                </div>
-                <div id="contact-pic-background">
-                    <img src="./assets/images/hello.png" id="contact-pic"></img>
-                </div>
-            </div>
+
+        <!-- personal contact thumbnail -->
+        <div class="fadein-on-scroll" id="personal-contact-background">
+          <img src="./assets/images/hello.png" id="personal-contact-thumbnail"></img>
         </div>
+      </div>
     </body>
+
+    <!-- footer -->
     <footer>
-        <div id="footer-wrapper">
-            <div id="footer-trademark">© 2021 YUHAO HE</div>
-            <div id="footer-logo">YUHAO HE</div>
-        </div>
+      <div id="footer-wrapper">
+        <div id="footer-trademark">© 2021 YUHAO HE</div>
+        <div id="footer-logo">YUHAO HE</div>
+      </div>
     </footer>
-    <script type="module" src="./app.js"></script>
-    <script type="module" src="./src/profiles.js"></script>
-    <script type="module" src="./src/images.js"></script>
-    <script type="module" src="./src/links.js"></script>
-    <script type="module" src="./src/scroller.js"></script>
-    <script type="module" src="./src/loader.js"></script>
+
+    <!-- js -->
+    <script type="module" src="./main.js"></script>
 </html>
