@@ -52,7 +52,7 @@ export class ContentLoader {
     // bio content
     var content = document.createElement('div'); 
     var text = `<h2 class="bio-title">${bioElem.title}</h2>` + `<p class="bio-text">${bioElem.content}</p>`;
-    var url = ContentLoader.createLinkWithIcon('arrow', 'arrow.png', bioElem.url);
+    var url = ContentLoader.createLinkWithIcon('arrow', 'arrow.png', links[bioElem.url]);
     content.innerHTML += text;
     content.append(url);
 
