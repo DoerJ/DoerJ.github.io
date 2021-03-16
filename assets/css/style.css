@@ -1,3 +1,6 @@
+html, body {
+  overflow-x: hidden;
+}
 div {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -246,5 +249,79 @@ h2 {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* for mobile */
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 16px;
+  }
+  ul > span {
+    font-size: 15px;
+  }
+  li {
+    font-size: 13px;
+  }
+  #logo, #footer-logo {
+    font-size: 10px;
+    height: 51px;
+  }
+  .header-bio {
+    font-size: 10px;
+  }
+  #header-wrapper {
+    height: 472px;
+  }
+  .bio-element-left > div {
+    margin-left: 28px;
+  }
+  .bio-element-right > div {
+    margin-left: 20px;
+    transform: translateY(-5px);
+  }
+  .bio-text {
+    margin-top: 62px;
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .arrow {
+    margin-top: 17px;
+  }
+  .arrow > img {
+    width: 30px;
+  }
+  .bio-thumbnail-left {
+    position: relative;
+    margin-left: 131px;
+    margin-top: -115px;
+    z-index: -1;
+    width: 304px;
+  }
+  .bio-thumbnail-right {
+    width: 320px;
+    margin-left: -173px;
+  }
+  .slidein-on-scroll {
+    margin-bottom: 320px;
+  }
+  #personal-contact {
+    margin-top: 300px;
+  }
+  #personal-contact-content {
+    margin: 0;
+    text-align: center;
+  }
+  .social-media-item > img {
+    width: 33px;
+  }
+  #personal-contact-background {
+    display: none!important;
+  }
+  #footer-wrapper {
+    margin-top: 138px;
+  }
+  #footer-trademark {
+    font-size: 10px;
   }
 }
