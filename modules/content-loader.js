@@ -8,10 +8,14 @@ var base_path = './assets/images/';
 export class ContentLoader {
   constructor() {
     var self = this;
-    // load up content for bio 
-    self.loadBioContent();
-    // load up content for personal contact 
-    self.loadPersonalContact();
+
+    self.doneLoading = new Promise((resolve) => {
+      // load up content for bio 
+      self.loadBioContent();
+      // load up content for personal contact 
+      self.loadPersonalContact();
+      resolve();
+    })
   }
   
   loadBioContent() {
@@ -48,6 +52,7 @@ export class ContentLoader {
     var orientation = bioElem.layoutOrientation;
 
     var element = document.createElement('div');
+    element.id = bioElem.id;
     element.classList.add(`bio-element-${orientation}`, 'slidein-on-scroll');
     // bio content
     var content = document.createElement('div'); 

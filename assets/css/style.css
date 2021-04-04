@@ -90,6 +90,7 @@ h2 {
   transform: translateY(-45px);
 }
 .bio-text {
+  width: 745px;
   font-size: 17px;
   margin-top: 84px;
   line-height: 32px;
@@ -252,6 +253,55 @@ h2 {
   }
 }
 
+/* cursor animation effect */
+.header-bio, #bio-content, #personal-contact, #footer-trademark {
+  position: relative;
+  z-index: 10;
+}
+#cursor-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#cursor-dot {
+  width: 25px;
+  height: 25px;
+  background-color: #d91d0c;
+  border: 1px solid #d91d0c;
+  position: absolute;
+  border-radius: 50%;
+  transition-duration: .1s;
+  transition-timing-function: linear;
+  z-index: 2;
+}
+
+#cursor-circle {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #f2ae2f;
+  background-color: #f2ae2f;
+  position: absolute;
+  border-radius: 50%;
+  transition-duration: .15s;
+  transition-timing-function: linear;
+  z-index: 1;
+}
+
+#cursor-square {
+  width: 170px;
+  height: 170px;
+  border: 1px solid #f2d231;
+  background-color: #f2d231;
+  position: absolute;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+  z-index: 0;
+  transform: rotate(25deg);
+}
+
 /* for mobile */
 @media only screen and (max-width: 900px) {
   h2 {
@@ -281,6 +331,7 @@ h2 {
     transform: translateY(-5px);
   }
   .bio-text {
+    width: 345px;
     margin-top: 62px;
     font-size: 10px;
     line-height: 24px;
@@ -323,5 +374,8 @@ h2 {
   }
   #footer-trademark {
     font-size: 10px;
+  }
+  #cursor-wrapper {
+    display: none;
   }
 }
