@@ -144,7 +144,10 @@ h2 {
   display: flex;
   align-items: center;
 }
-#personal-social-medias-wrapper a:not(#personal-social-medias-wrapper a:first-of-type) {
+/* #personal-social-medias-wrapper a:not(#personal-social-medias-wrapper a:first-of-type) {
+  margin-left: 36px;
+} */
+.icon-not-first-of-type {
   margin-left: 36px;
 }
 #personal-contact-background {
