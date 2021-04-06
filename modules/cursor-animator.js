@@ -61,8 +61,6 @@ var animateCursor = () => {
 
   square.style.left = (cursor_x - square_width - 20) + 'px';
   square.style.top = (cursor_y - square_width - 10) + 'px';
-
-  window.requestAnimationFrame(animateCursor);
 }
 
 export class CursorAnimator {
@@ -77,6 +75,8 @@ export class CursorAnimator {
       cursor_client_y = e.clientY;
 
       self.checkCursorStyle(cursor_y);
+      // update cursor positions
+      animateCursor();
     })
 
     window.addEventListener('scroll', (e) => {
@@ -84,6 +84,7 @@ export class CursorAnimator {
       cursor_y = window.scrollY + cursor_client_y;
 
       self.checkCursorStyle(cursor_y);
+      animateCursor();
     })
 
     self.content.doneLoading.then(() => {
@@ -96,8 +97,6 @@ export class CursorAnimator {
       project_offset = getElementPageYOffset(project_area);
       design_offset = getElementPageYOffset(design_area);
     })
-
-    window.requestAnimationFrame(animateCursor);
   }
 
   // check which area is cursor at
