@@ -305,6 +305,71 @@ h2 {
   transform: rotate(25deg);
 }
 
+/* medium size screen  */
+@media only screen and (max-width: 1500px) {
+  h2 {
+    font-size: 21px;
+  }
+  #header-wrapper {
+    height: 900px;
+  }
+  .header-bio {
+    font-size: 17px;
+  }
+  .bio-text {
+    width: 448px;
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 49px;
+  }
+  .arrow > img {
+    width: 37px;
+  }
+  .bio-thumbnail-left, .bio-thumbnail-right {
+    width: 329px;
+  }
+  #design-container.bio-element-left div {
+    transform: translateY(-16px);
+  }
+  #personal-contact {
+    margin-top: 433px;
+  }
+  #personal-contact-background img {
+    min-width: 559px;
+  }
+  #personal-contact-background {
+    height: 440px
+  }
+  #personal-contact-info span, #personal-contact-socials span {
+    font-size: 16px;
+  }
+  #personal-contact-info li {
+    font-size: 13px;
+  }
+  .social-media-item img {
+    width: 36px;
+  }
+  #footer-wrapper {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  #logo, #footer-logo {
+    font-size: 15px;
+  }
+  #cursor-dot {
+    width: 18px;
+    height: 18px;
+  }
+  #cursor-circle {
+    width: 56px;
+    height: 56px;
+  }
+  #cursor-square {
+    width: 133px;
+    height: 133px;
+  }
+}
+
 /* for mobile */
 @media only screen and (max-width: 900px) {
   h2 {

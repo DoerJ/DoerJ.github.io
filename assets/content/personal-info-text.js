@@ -1,6 +1,6 @@
 export const personalInfoText = {
   personalInfo: {
-    email: 'jamesyuhao@hotmail.com'
+    Email: 'jamesyuhao@hotmail.com'
   },
   socialMedias: {
     github: {
