@@ -394,6 +394,9 @@ h2 {
   .bio-element-left > div {
     margin-left: 28px;
   }
+  #design-container.bio-element-left > div {
+    transform: translateY(-88px);
+  }
   .bio-element-right > div {
     margin-left: 20px;
     transform: translateY(-5px);
